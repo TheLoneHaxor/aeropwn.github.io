@@ -66,7 +66,8 @@ padding-top: 10px;
 	<p>for iOS <b>11.2.1 (WIP)</b></p>
 	<br/>
 	<div class="button">
-	<a href="#" style="text-decoration: none;">
+	<h2 id='status'></h2>
+	<a href="javascript:go()" style="text-decoration: none;">
 	<div class="buttontext">Jailbreak
 	</div>
 	</a>
@@ -80,4 +81,31 @@ padding-top: 10px;
 	</p>
 </center>
 </body>
+	<script>
+	// PREVENT SOME KERNEL CORRUPTION
+  document.ontouchmove = function(e) {e.preventDefault()};
+  // EXPLOIT CODE
+function go() {
+document.getElementById("Go").disabled = true;
+	
+	// EXPLOIT CODE WILL GO HERE!
+	
+document.getElementById('status').innerText = 'Attempting...';
+	
+setTimeout(go_, 1000);
+}
+function go_() {
+document.getElementById('status').innerText = 'Exploiting...';
+	
+	// EXPLOIT CODE WILL GO HERE!
+	
+setTimeout(kext, 2000);
+}
+function kext() {
+	
+	// EXPLOIT CODE WILL GO HERE!
+	
+document.getElementById('status').innerText = 'Done!';
+}
+</script>
 </html>
